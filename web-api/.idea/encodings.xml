@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/SolrUpdater" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/imageUtility" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/playerCrawler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/replayService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/replayUtility" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/website/service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/website/service.client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/website/service.imp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/website/www.website" charset="UTF-8" />
+  </component>
+</project>

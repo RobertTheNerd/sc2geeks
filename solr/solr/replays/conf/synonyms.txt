@@ -1,0 +1,25 @@
+
+#match ups
+pvt,tvp
+pvz,zvp
+tvz,zvt
+
+#popular player names
+mvp => immvp
+mc,ogsmc,skmc
+bomber,stbomber,st_bomber
+mkp,marineking
+nestea,imnestea,QIMNesTea
+drg,mvpdrg,DongRaeGu,coLMvPDRG
+mma,slayersmma,slayers_mma
+idra,egidra
+puma,egpuma
+tlo,liquidtlo
+naniwa,colnaniwa
+EGDeMusliM,DeMusliM
+EGHuk,Huk
+EGiNcontroL,InControl
+EGAxslav,Axslav
+EGJYP,JYP
+EGGrubby,Grubby
+Losira,IMLosira

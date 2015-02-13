@@ -1,0 +1,18 @@
+<div>
+    <h2>Event list.</h2>
+    <input id="show_not_all_done" type="checkbox" value="checked" ng-model="filter_all_assigned" ng-change="toggleFilterAllAssigned()"> <label for="show_not_all_done">Show events that are not finished.</label>
+    <table class="table table-bordered">
+        <thead>
+            <tr><th>Event</th><th>Number of replays</th><th>All Assigned</th><th>Edit</th></tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="event in events">
+                <td>{{event.event_name}}</td>
+                <td>{{event.total_replays}}</td>
+                <td>{{event.all_progamers_assigned === true ? 'Yes' : 'No'}}</td>
+                <td><a href="#/progamer/event/{{event.event_id}}">Edit</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination total-items="total_count" items-per-page="page_size" ng-model="page_no" ng-change="pageChanged();"></pagination>
+</div>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/sc2geeks.common/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sc2geeks.common/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/commons/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/commons/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/app/replayService/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/app/replayService/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+      <entry name="?*.ftl" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="api.sc2geeks.service" />
+        <module name="api.sc2geeks.service.imp" />
+        <module name="commons" />
+        <module name="imageUtility" />
+        <module name="playerCrawler" />
+        <module name="replayService" />
+        <module name="replayUtil" />
+        <module name="replayUtility" />
+        <module name="SC2Geeks.ImageUtil" />
+        <module name="service" />
+        <module name="service.client" />
+        <module name="service.imp" />
+        <module name="SolrUpdater" />
+        <module name="www.website" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app" target="1.7" />
+      <module name="commons" target="1.7" />
+      <module name="imageUtility" target="1.7" />
+      <module name="playerCrawler" target="1.7" />
+      <module name="replayService" target="1.7" />
+      <module name="replayUtility" target="1.7" />
+      <module name="sc2geeks" target="1.7" />
+      <module name="service" target="1.7" />
+      <module name="service.client" target="1.7" />
+      <module name="service.imp" target="1.7" />
+      <module name="SolrUpdater" target="1.7" />
+      <module name="v2" target="1.7" />
+      <module name="website" target="1.7" />
+      <module name="www.website" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

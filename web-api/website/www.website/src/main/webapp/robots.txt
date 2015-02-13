@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /replay/download/
+Disallow: /replay/filterlist.html
+
+# Sitemap files
+Sitemap: http://www.sc2geeks.com/sitemap.xml

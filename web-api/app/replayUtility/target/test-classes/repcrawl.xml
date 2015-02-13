@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sqlHelperConfig" class="com.sc2geeks.replayUtility.dal.SqlHelperConfig">
+		<property name="driverName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/sc2rep?characterEncoding=UTF-8&amp;useUnicode=true"/>
+		<property name="user" value="sc2nerd"/>
+		<property name="password" value="nerd168"/>
+	</bean>
+	<bean id="crawlerConfig" class="com.sc2geeks.replayUtility.crawler.CrawlerConfig">
+		<!-- for sc2.com.cn, start page is 1, for sc2rep.net, startpage is 0 -->
+		<property name="startingPage_sc2rep" value="0"/>
+		<property name="startingPage_163" value="1" />
+		<property name="sleepFor163" value="0" />
+		<property name="maxExistedGameBeforeStop" value="5000"/>
+		<property name="maxRetries" value="10" />
+		<property name="stopAtDate">
+			<bean factory-bean="dateFormat" factory-method="parse">
+				<constructor-arg value="2011-10-23"/>
+			</bean>
+		</property>
+	</bean>
+	<bean id="downloaderConfig" class="com.sc2geeks.replayUtility.downloader.DownloaderConfig">
+		<property name="batchSize" value="100"/>
+		<property name="maxFailedRetries" value="5"/>
+		<property name="processFailedReplays" value="true"/>
+		<property name="downloadFolder" ref="downloadFolder"/>
+		<property name="sleepFor163" value="0" />
+	</bean>
+	<bean id="parserConfig" class="com.sc2geeks.replayUtility.ParserConfig">
+		<property name="downloadFolder" ref="downloadFolder"/>
+		<property name="batchSize" value="100"/>
+		<property name="parseResultFolder" value="/data/sc2rep/parseResult/"/>
+		<property name="sc2gearsUtiltiy"
+		          value="/Users/robert/Dropbox/devel/sc2gear/latest/Sc2gears-os-x.command --print-game-info {replay}"/>
+	</bean>
+	<bean id="workerConfig" class="com.sc2geeks.replayUtility.MainWorkerConfig">
+		<property name="doCrawl" value="false"/>
+		<property name="doDownload" value="true"/>
+		<property name="doReplayParse" value="true"/>
+		<property name="doUpload" value="true" />
+	</bean>
+
+	<bean id="renameConfig" class="com.sc2geeks.replayUtility.UploadConfig">
+		<property name="batchSize" value="200" />
+		<property name="downloadFolder" ref="downloadFolder" />
+	</bean>
+
+	<bean id="downloadFolder" class="java.lang.String">
+		<constructor-arg value="/data/sc2rep/badrep/"/>
+	</bean>
+	<bean id="dateFormat" class="java.text.SimpleDateFormat">
+		<constructor-arg value="yyyy-MM-dd"/>
+	</bean>
+</beans>

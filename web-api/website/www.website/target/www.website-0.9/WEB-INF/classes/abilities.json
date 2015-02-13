@@ -1,0 +1,473 @@
+[
+	{"name":"Archon","type":"unit"},
+	{"name":"Hellion","type":"unit"},
+	{"name":"Interceptor","type":"unit"},
+	{"name":"SiegeTank","type":"unit"},
+	{"name":"Thor","type":"unit"},
+	{"name":"WidowMine","type":"unit"},
+	{"name":"CalldownMULE","type":"unit"},
+	{"name":"Archon","type":"unit"},
+	{"name":"Colossus","type":"unit"},
+	{"name":"HighTemplar","type":"unit"},
+	{"name":"Immortal","type":"unit"},
+	{"name":"Oracle","type":"unit"},
+	{"name":"Phoenix","type":"unit"},
+	{"name":"Probe","type":"unit"},
+	{"name":"Stalker","type":"unit"},
+	{"name":"VoidRay","type":"unit"},
+	{"name":"WarpPrism","type":"unit"},
+	{"name":"Zealot","type":"unit"},
+	{"name":"Corruptor","type":"unit"},
+	{"name":"Drone","type":"unit"},
+	{"name":"Hydralisk","type":"unit"},
+	{"name":"Infestor","type":"unit"},
+	{"name":"Mutalisk","type":"unit"},
+	{"name":"Overlord","type":"unit"},
+	{"name":"Roach","type":"unit"},
+	{"name":"SwarmHost","type":"unit"},
+	{"name":"Baneling","type":"unit"},
+	{"name":"BroodLord","type":"unit"},
+	{"name":"GreaterSpire","type":"unit"},
+	{"name":"Overseer","type":"unit"},
+	{"name":"Ultralisk","type":"unit"},
+	{"name":"Viper","type":"unit"},
+	{"name":"Zergling","type":"unit"},
+	{"name":"SpawnChangeling","type":"unit"},
+	{"name":"SpawnInfestedTerran","type":"unit"},
+	{"name":"SpawnLarva","type":"unit"},
+	{"name":"SpawnLocusts","type":"unit"},
+	{"name":"Banshee","type":"unit"},
+	{"name":"Battlecruiser","type":"unit"},
+	{"name":"Carrier","type":"unit"},
+	{"name":"Colossus","type":"unit"},
+	{"name":"DarkTemplar","type":"unit"},
+	{"name":"Ghost","type":"unit"},
+	{"name":"HighTemplar","type":"unit"},
+	{"name":"Immortal","type":"unit"},
+	{"name":"Marauder","type":"unit"},
+	{"name":"Marine","type":"unit"},
+	{"name":"Medivac","type":"unit"},
+	{"name":"MothershipCore","type":"unit"},
+	{"name":"Observer","type":"unit"},
+	{"name":"Oracle","type":"unit"},
+	{"name":"Phoenix","type":"unit"},
+	{"name":"Probe","type":"unit"},
+	{"name":"Queen","type":"unit"},
+	{"name":"Raven","type":"unit"},
+	{"name":"Reaper","type":"unit"},
+	{"name":"SCV","type":"unit"},
+	{"name":"Sentry","type":"unit"},
+	{"name":"Stalker","type":"unit"},
+	{"name":"Tempest","type":"unit"},
+	{"name":"Viking","type":"unit"},
+	{"name":"VoidRay","type":"unit"},
+	{"name":"WarpPrism","type":"unit"},
+	{"name":"Zealot","type":"unit"},
+	{"name":"DarkTemplar","type":"unit"},
+	{"name":"HighTemplar","type":"unit"},
+	{"name":"Sentry","type":"unit"},
+	{"name":"Stalker","type":"unit"},
+	{"name":"Zealot","type":"unit"},
+	{"name":"Mothership","type":"unit"},
+
+	{"name":"Armory","type":"building"},
+	{"name":"Assimilator","type":"building"},
+	{"name":"AutoTurret","type":"building"},
+	{"name":"BanelingNest","type":"building"},
+	{"name":"Barracks","type":"building"},
+	{"name":"BattleHellion","type":"building"},
+	{"name":"Bunker","type":"building"},
+	{"name":"CommandCenter","type":"building"},
+	{"name":"CreepTumor","type":"building"},
+	{"name":"CyberneticsCore","type":"building"},
+	{"name":"DarkShrine","type":"building"},
+	{"name":"EngineeringBay","type":"building"},
+	{"name":"EvolutionChamber","type":"building"},
+	{"name":"Extractor","type":"building"},
+	{"name":"Factory","type":"building"},
+	{"name":"FleetBeacon","type":"building"},
+	{"name":"Forge","type":"building"},
+	{"name":"FusionCore","type":"building"},
+	{"name":"Gateway","type":"building"},
+	{"name":"GhostAcademy","type":"building"},
+	{"name":"Hatchery","type":"building"},
+	{"name":"HydraliskDen","type":"building"},
+	{"name":"InfestationPit","type":"building"},
+	{"name":"MissileTurret","type":"building"},
+	{"name":"Nexus","type":"building"},
+	{"name":"Nuke","type":"building"},
+	{"name":"NydusNetwork","type":"building"},
+	{"name":"NydusWorm","type":"building"},
+	{"name":"PhotonCannon","type":"building"},
+	{"name":"PointDefenseDrone","type":"building"},
+	{"name":"Pylon","type":"building"},
+	{"name":"ReactorFactory","type":"building"},
+	{"name":"ReactorStarport","type":"building"},
+	{"name":"Refinery","type":"building"},
+	{"name":"RoachWarren","type":"building"},
+	{"name":"RoboticsBay","type":"building"},
+	{"name":"RoboticsFacility","type":"building"},
+	{"name":"SensorTower","type":"building"},
+	{"name":"SpawningPool","type":"building"},
+	{"name":"SpineCrawler","type":"building"},
+	{"name":"Spire","type":"building"},
+	{"name":"SporeCrawler","type":"building"},
+	{"name":"Stargate","type":"building"},
+	{"name":"OrbitalCommand","type":"building"},
+	{"name":"PlanetaryFortress","type":"building"},
+	{"name":"Starport","type":"building"},
+	{"name":"SupplyDepot","type":"building"},
+	{"name":"TechLabFactory","type":"building"},
+	{"name":"TechLabStarport","type":"building"},
+	{"name":"TemplarArchive","type":"building"},
+	{"name":"TwilightCouncil","type":"building"},
+	{"name":"UltraliskCavern","type":"building"},
+	{"name":"CreepTumor","type":"building"},
+	{"name":"GenerateCreep","type":"building"},
+	{"name":"ReactorBarracks","type":"building"},
+	{"name":"TechLabBarracks","type":"building"},
+	{"name":"Gateway","type":"building"},
+	{"name":"WarpGate","type":"building"},
+
+	{"name":"Abduct","type":"ability"},
+	{"name":"BlindingCloud","type":"ability"},
+	{"name":"Blink","type":"ability"},
+	{"name":"BurrowBaneling","type":"ability"},
+	{"name":"BurrowDrone","type":"ability"},
+	{"name":"BurrowHydralisk","type":"ability"},
+	{"name":"BurrowInfestor","type":"ability"},
+	{"name":"BurrowQueen","type":"ability"},
+	{"name":"BurrowRoach","type":"ability"},
+	{"name":"BurrowSwarmHost","type":"ability"},
+	{"name":"BurrowUltralisk","type":"ability"},
+	{"name":"BurrowWidowMine","type":"ability"},
+	{"name":"BurrowZergling","type":"ability"},
+	{"name":"Charge","type":"ability"},
+	{"name":"ChronoBoost","type":"ability"},
+	{"name":"CloakBanshee","type":"ability"},
+	{"name":"CloakGhost","type":"ability"},
+	{"name":"Consume","type":"ability"},
+	{"name":"Contaminate","type":"ability"},
+	{"name":"Corruption","type":"ability"},
+	{"name":"Dance","type":"ability"},
+	{"name":"DecloakBanshee","type":"ability"},
+	{"name":"DecloakGhost","type":"ability"},
+	{"name":"DisableVolatileBurst","type":"ability"},
+	{"name":"EMPRound","type":"ability"},
+	{"name":"Envision","type":"ability"},
+	{"name":"ExtraSupplies","type":"ability"},
+	{"name":"Feedback","type":"ability"},
+	{"name":"FighterMode","type":"ability"},
+	{"name":"ForceField","type":"ability"},
+	{"name":"FungalGrowth","type":"ability"},
+	{"name":"GravitonBeam","type":"ability"},
+	{"name":"GuardianShield","type":"ability"},
+	{"name":"HaltBuilding","type":"ability"},
+	{"name":"InfestorNeuralParasite","type":"ability"},
+	{"name":"LandBarracks","type":"ability"},
+	{"name":"LandCommandCenter","type":"ability"},
+	{"name":"LandFactory","type":"ability"},
+	{"name":"LandOrbitalCommand","type":"ability"},
+	{"name":"LandStarport","type":"ability"},
+	{"name":"LiftBarracks","type":"ability"},
+	{"name":"LiftCommandCenter","type":"ability"},
+	{"name":"LiftFactory","type":"ability"},
+	{"name":"LiftOrbitalCommand","type":"ability"},
+	{"name":"LiftStarport","type":"ability"},
+	{"name":"LoadAllCommandCenter","type":"ability"},
+	{"name":"LoadTargetBunker","type":"ability"},
+	{"name":"LowerSupplyDepot","type":"ability"},
+	{"name":"MassRecallMothershipCore","type":"ability"},
+	{"name":"MedivacSpeedBoost","type":"ability"},
+	{"name":"MothershipCorePurifyNexus","type":"ability"},
+	{"name":"MothershipMassRecall","type":"ability"},
+	{"name":"MULERepair","type":"ability"},
+	{"name":"OracleWeapon","type":"ability"},
+	{"name":"OracleWeaponOff","type":"ability"},
+	{"name":"PhasingMode","type":"ability"},
+	{"name":"PrismaticAlignment","type":"ability"},
+	{"name":"PsionicStorm","type":"ability"},
+	{"name":"QueenTransfusion","type":"ability"},
+	{"name":"RaiseSupplyDepot","type":"ability"},
+	{"name":"ReturnCargo","type":"ability"},
+	{"name":"Revelation","type":"ability"},
+	{"name":"RootSpineCrawler","type":"ability"},
+	{"name":"RootSporeCrawler","type":"ability"},
+	{"name":"SalvageBunker","type":"ability"},
+	{"name":"SalvageBunkerRefund","type":"ability"},
+	{"name":"SalvageShared","type":"ability"},
+	{"name":"ScanMove","type":"ability"},
+	{"name":"SCVRepair","type":"ability"},
+	{"name":"SiegeMode","type":"ability"},
+	{"name":"SniperRound","type":"ability"},
+	{"name":"StimpackRedirect","type":"ability"},
+	{"name":"TacticalNukeStrike","type":"ability"},
+	{"name":"TankMode","type":"ability"},
+	{"name":"TemporalField","type":"ability"},
+	{"name":"UnburrowBaneling","type":"ability"},
+	{"name":"UnburrowDrone","type":"ability"},
+	{"name":"UnburrowHydralisk","type":"ability"},
+	{"name":"UnburrowInfestor","type":"ability"},
+	{"name":"UnburrowQueen","type":"ability"},
+	{"name":"UnburrowRoach","type":"ability"},
+	{"name":"UnburrowSwarmHost","type":"ability"},
+	{"name":"UnburrowUltralisk","type":"ability"},
+	{"name":"UnburrowWidowMine","type":"ability"},
+	{"name":"UnburrowZergling","type":"ability"},
+	{"name":"UnloadAllBunker","type":"ability"},
+	{"name":"UnloadAllCommandCenter","type":"ability"},
+	{"name":"UnloadAllNydus","type":"ability"},
+	{"name":"UnloadTargetMedivac","type":"ability"},
+	{"name":"UnloadTargetOverlord","type":"ability"},
+	{"name":"UnloadTargetWarpPrism","type":"ability"},
+	{"name":"UprootSpineCrawler","type":"ability"},
+	{"name":"UprootSporeCrawler","type":"ability"},
+	{"name":"UseStimpack","type":"ability"},
+	{"name":"YamatoGun","type":"ability"},
+
+	{"name":"EvolveAdrenalGlands","type":"upgrade"},
+	{"name":"EvolveBurrow","type":"upgrade"},
+	{"name":"EvolveCentrifugalHooks","type":"upgrade"},
+	{"name":"EvolveChitinousPlating","type":"upgrade"},
+	{"name":"EvolveEnduringLocusts","type":"upgrade"},
+	{"name":"EvolveFlyerAttacks1","type":"upgrade"},
+	{"name":"EvolveFlyerAttacks2","type":"upgrade"},
+	{"name":"EvolveFlyerAttacks3","type":"upgrade"},
+	{"name":"EvolveFlyerCarapace1","type":"upgrade"},
+	{"name":"EvolveFlyerCarapace2","type":"upgrade"},
+	{"name":"EvolveFlyerCarapace3","type":"upgrade"},
+	{"name":"EvolveGlialReconstitution","type":"upgrade"},
+	{"name":"EvolveGroovedSpines","type":"upgrade"},
+	{"name":"EvolveGroundCarapace1","type":"upgrade"},
+	{"name":"EvolveGroundCarapace2","type":"upgrade"},
+	{"name":"EvolveGroundCarapace3","type":"upgrade"},
+	{"name":"EvolveMeleeAttacks1","type":"upgrade"},
+	{"name":"EvolveMeleeAttacks2","type":"upgrade"},
+	{"name":"EvolveMeleeAttacks3","type":"upgrade"},
+	{"name":"EvolveMetabolicBoost","type":"upgrade"},
+	{"name":"EvolveMissileAttacks1","type":"upgrade"},
+	{"name":"EvolveMissileAttacks2","type":"upgrade"},
+	{"name":"EvolveMissileAttacks3","type":"upgrade"},
+	{"name":"EvolveMuscularAugments","type":"upgrade"},
+	{"name":"EvolveNeuralParasite","type":"upgrade"},
+	{"name":"EvolvePathogenGlands","type":"upgrade"},
+	{"name":"EvolvePneumatizedCarapace","type":"upgrade"},
+	{"name":"EvolveTunnelingClaws","type":"upgrade"},
+	{"name":"EvolveVentralSacs","type":"upgrade"},
+	{"name":"ResearchAnionPulseCrystals","type":"upgrade"},
+	{"name":"ResearchBehemothReactor","type":"upgrade"},
+	{"name":"ResearchBlink","type":"upgrade"},
+	{"name":"ResearchCaduceusReactor","type":"upgrade"},
+	{"name":"ResearchCharge","type":"upgrade"},
+	{"name":"ResearchCloakingField","type":"upgrade"},
+	{"name":"ResearchCombatShield","type":"upgrade"},
+	{"name":"ResearchConcussiveShells","type":"upgrade"},
+	{"name":"ResearchCorvidReactor","type":"upgrade"},
+	{"name":"ResearchDrillingClaws","type":"upgrade"},
+	{"name":"ResearchDurableMaterials","type":"upgrade"},
+	{"name":"ResearchExtendedThermalLance","type":"upgrade"},
+	{"name":"ResearchFluxVanes","type":"upgrade"},
+	{"name":"ResearchGraviticBoosters","type":"upgrade"},
+	{"name":"ResearchGraviticDrive","type":"upgrade"},
+	{"name":"ResearchHiSecAutoTracking","type":"upgrade"},
+	{"name":"ResearchInfernalPreIgniter","type":"upgrade"},
+	{"name":"ResearchMoebiusReactor","type":"upgrade"},
+	{"name":"ResearchNeosteelFrame","type":"upgrade"},
+	{"name":"ResearchPersonalCloaking","type":"upgrade"},
+	{"name":"ResearchPsiStorm","type":"upgrade"},
+	{"name":"ResearchStimpack","type":"upgrade"},
+	{"name":"ResearchTransformationServos","type":"upgrade"},
+	{"name":"ResearchWarpGate","type":"upgrade"},
+	{"name":"ResearchWeaponRefit","type":"upgrade"},
+	{"name":"UpgradeAirArmor1","type":"upgrade"},
+	{"name":"UpgradeAirArmor2","type":"upgrade"},
+	{"name":"UpgradeAirArmor3","type":"upgrade"},
+	{"name":"UpgradeAirWeapons1","type":"upgrade"},
+	{"name":"UpgradeAirWeapons2","type":"upgrade"},
+	{"name":"UpgradeAirWeapons3","type":"upgrade"},
+	{"name":"UpgradeGroundArmor1","type":"upgrade"},
+	{"name":"UpgradeGroundArmor2","type":"upgrade"},
+	{"name":"UpgradeGroundArmor3","type":"upgrade"},
+	{"name":"UpgradeGroundWeapons1","type":"upgrade"},
+	{"name":"UpgradeGroundWeapons2","type":"upgrade"},
+	{"name":"UpgradeGroundWeapons3","type":"upgrade"},
+	{"name":"UpgradeShields1","type":"upgrade"},
+	{"name":"UpgradeShields2","type":"upgrade"},
+	{"name":"UpgradeShipPlating1","type":"upgrade"},
+	{"name":"UpgradeShipPlating2","type":"upgrade"},
+	{"name":"UpgradeShipPlating3","type":"upgrade"},
+	{"name":"UpgradeShipWeapons1","type":"upgrade"},
+	{"name":"UpgradeShipWeapons2","type":"upgrade"},
+	{"name":"UpgradeShipWeapons3","type":"upgrade"},
+	{"name":"UpgradesShields3","type":"upgrade"},
+	{"name":"UpgradeStructureArmor","type":"upgrade"},
+	{"name":"UpgradeTerranInfantryArmor1","type":"upgrade"},
+	{"name":"UpgradeTerranInfantryArmor2","type":"upgrade"},
+	{"name":"UpgradeTerranInfantryArmor3","type":"upgrade"},
+	{"name":"UpgradeTerranInfantryWeapons1","type":"upgrade"},
+	{"name":"UpgradeTerranInfantryWeapons2","type":"upgrade"},
+	{"name":"UpgradeTerranInfantryWeapons3","type":"upgrade"},
+	{"name":"UpgradeToHive","type":"upgrade"},
+	{"name":"UpgradeToLair","type":"upgrade"},
+	{"name":"UpgradeVehiclePlating1","type":"upgrade"},
+	{"name":"UpgradeVehiclePlating2","type":"upgrade"},
+	{"name":"UpgradeVehicleWeapons1","type":"upgrade"},
+	{"name":"UpgradeVehicleWeapons2","type":"upgrade"},
+	{"name":"UpgradeVehicleWeapons3","type":"upgrade"},
+	{"name":"VehicleAndShipPlating1","type":"upgrade"},
+	{"name":"VehicleAndShipPlating2","type":"upgrade"},
+	{"name":"VehicleAndShipPlating3","type":"upgrade"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

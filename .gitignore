@@ -24,3 +24,8 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
+
+# Idea project file that is workspace specific #
+################################################
+.idea/workspace.xml
+.idea/tasks.xml

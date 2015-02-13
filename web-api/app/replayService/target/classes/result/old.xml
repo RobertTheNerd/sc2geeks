@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gameInfo Sc2gearsVersion="12.4" docVersion="1.0">
+	<fileName>/cdn/replays/download/41237.sc2Replay</fileName>
+	<fileSize>97384</fileSize>
+	<version>1.4.3.21029</version>
+	<date>2012-04-23 10:46:33</date>
+	<recorderTimeZone>+2.00</recorderTimeZone>
+	<gameLength>00:14:26</gameLength>
+	<gameSpeed>Faster</gameSpeed>
+	<gameType>Private</gameType>
+	<format>1v1</format>
+	<gateway>America</gateway>
+	<clients clientsCount="6">FXOasd, ByuNPrime, NoExcuses, TeamEmpire, Aristeo, ZOTACUrsadon</clients>
+	<mapName>GSL Terminus SE</mapName>
+	<mapFile>6c/17/6c17bec6f8e2fd9d2df24c9518be8b5167912cf347e925f174e2d116fd3eea96.s2ma</mapFile>
+	<players playersCount="2" teamsCount="2">
+		<team team="1">
+			<player>
+				<name>FXOasd</name>
+				<race>Protoss</race>
+				<apm>228</apm>
+				<eapm>152</eapm>
+				<type battleNetId="3430640" fullName="FXOasd/US/1/3430640" gateway="America" region="North America">Human</type>
+				<color blue="41" green="225" name="Yellow" red="235">Yellow (235,225,41)</color>
+			</player>
+		</team>
+		<team team="2">
+			<player>
+				<name>ByuNPrime</name>
+				<race>Terran</race>
+				<apm>326</apm>
+				<eapm>195</eapm>
+				<type battleNetId="3191778" fullName="ByuNPrime/US/1/3191778" gateway="America" region="North America">Human</type>
+				<color blue="30" green="20" name="Red" red="180">Red (180,20,30)</color>
+			</player>
+		</team>
+	</players>
+	<winners winnersCount="1">ByuNPrime</winners>
+</gameInfo>

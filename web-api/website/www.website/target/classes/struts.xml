@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+		"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.action.extension" value=",html,gift"/>
+	<constant name="struts.enable.SlashesInActionNames" value="true"/>
+	<constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.action.excludePattern" value="/template/.*|/theme/.*" />
+
+
+	<package name="sc2geeks-default" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+		</result-types>
+
+		<global-results>
+			<result name="Exception">/views/exception.html</result>
+			<result name="redirect">/views/Redirect.jsp</result>
+			<result name="not-found" type="tiles">notFoundLayout</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception" result="Exception"/>
+		</global-exception-mappings>
+	</package>
+
+	<package name="replay_nav" namespace="/replay/nav" extends="sc2geeks-default">
+		<action name="**" class="com.sc2geeks.front.action.replay.SearchAction">
+			<result name="success" type="tiles">searchResultLayout</result>
+			<result name="refinement">/views/replay/search/allNavs.jsp</result>
+		</action>
+	</package>
+    <package name="replay" namespace="/replay" extends="sc2geeks-default">
+        <action name="index" class="com.sc2geeks.front.action.replay.SearchAction">
+            <result name="success" type="tiles">searchResultLayout</result>
+        </action>
+        <action name="**" class="com.sc2geeks.front.action.replay.ReplayDetailAction">
+            <result name="detail" type="tiles">replayDetailLayout</result>
+        </action>
+    </package>
+	<package name="progamer" namespace="/progamer" extends="sc2geeks-default">
+		<action name="index" class="com.sc2geeks.front.action.progamer.ProgamerListAction">
+			<result name="success" type="tiles">ProgamerListLayout</result>
+		</action>
+		<action name="**" class="com.sc2geeks.front.action.progamer.ProgamerDetailAction">
+			<result name="success" type="tiles">ProgamerDetailLayout</result>
+			<result name="not-found" type="tiles">ProgamerDetailNotFoundLayout</result>
+		</action>
+	</package>
+	<package name="stats" namespace="/stats" extends="sc2geeks-default">
+		<action name="view-replay" class="com.sc2geeks.front.action.stats.StatsAction">
+			<param name="objType">replay</param>
+			<param name="actionType">view</param>
+			<result name="success">/views/stats/empty-pixel.jsp</result>
+		</action>
+		<action name="view-progamer" class="com.sc2geeks.front.action.stats.StatsAction">
+			<param name="objType">progamer</param>
+			<param name="actionType">view</param>
+			<result name="success">/views/stats/empty-pixel.jsp</result>
+		</action>
+	</package>
+    <package name="root" namespace="/" extends="sc2geeks-default">
+	    <action name="index" class="com.sc2geeks.front.action.WebsiteRootAction"></action>
+	    <action name="" class="com.sc2geeks.front.action.WebsiteRootAction"></action>
+		<action name="generateSitemap" class="com.sc2geeks.front.action.SiteMapAction">
+			<result name="success">/views/genSitemap.jsp</result>
+		</action>
+	    <action name="**" class="com.sc2geeks.front.action.root.NotFoundAction"></action>
+	</package>
+</struts>

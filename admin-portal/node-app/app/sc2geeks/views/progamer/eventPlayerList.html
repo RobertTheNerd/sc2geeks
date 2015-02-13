@@ -1,0 +1,40 @@
+<div>
+    <h2><a href="#/progamer/events">Events</a> > {{event.name}}</h2>
+
+    <div>Total replays: {{event_stats.total_replays}}</div>
+    <input id="all_done" type="checkbox" ng-model="event_stats.all_progamers_assigned" ng-change="toggleAllDone()"> <label for="all_done">All progamers assigned.</label>
+    <input id="filter_progamers" type="checkbox" value="checked" ng-model="filter_progamers" ng-change="toggleFilterProgamers()"> <label for="filter_progamers">Show players without progamers only.</label>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Battle Net Url</th>
+                <th width="480px">Progamer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="player in players">
+                <td>{{ player.player_name }}</td>
+                <td>{{ player.player_url }}</td>
+                <td>
+                    <div ng-if="!player.$edit">
+                        <span class="progamer-name">{{ player.progamer_name }}
+                        </span>
+                        <a href="" class="btn btn-default" ng-click="player.$edit = true">Edit</a>
+                    </div>
+                    <div ng-if="player.$edit">
+                        <ac-select ac-model='player.getProgamer()' ac-options='p.name for p in getAllProgamers()'
+                                   ac-settings="{ loadOnCreate:false, loadOnOpen: true, minWidth: '250px' }"
+                                   ac-change="progamerChange(value, $index)"></ac-select>
+                        <a href="" class="btn btn-default" ng-click="player.$edit = false">Cancel</a>
+                        <a href="" class="btn btn-danger" ng-click="deleteProgamer($index)">Delete</a>
+                        <a href="" class="btn btn-primary" ng-click="saveProgamer($index)">Save</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pagination total-items="total_count" items-per-page="page_size" ng-model="page_no" ng-change="pageChanged();"></pagination>
+</div>

@@ -1,0 +1,55 @@
+{
+    "_section_wordpress": "Defines wordpress related urls",
+    "url_obj": "http://d.sc2geeks.com/wp-json/sc2obj",
+    "url_map": "http://d.sc2geeks.com/wp-json/map",
+    "url_player": "http://d.sc2geeks.com/wp-json/player",
+    "url_upload_task": "http://d.sc2geeks.com/wp-json/upload_task",
+    "url_image": "http://d.sc2geeks.com/wp-json/sc2obj/img",
+    "url_progamer": "http://d.sc2geeks.com/wp-json/progamer",
+    "debug_php": true,
+
+    "_section_mongo": "simplified config for Mongo",
+    "mongodb_addr": "localhost",
+
+    "_section_mysql": "mysql config goes here",
+    "mysql_host":"localhost",
+    "mysql_port":"3306",
+    "mysql_user":"root",
+    "mysql_password": "",
+    "mysql_db":"sc2dev",
+
+    "_app_environment": "environment related settings",
+    "time_zone": "America/Los_Angeles",
+    "log_folder": "/Users/robert/data/replays/log",
+    "timestamp_file": "/Users/robert/data/timestamp.txt",
+
+    "_image_batch_size": "used for importing wordpress obj to mongo. Combine designated number of ids into one request when getting object images",
+    "image_batch_size": 100,
+
+    "_replay_series_setting": "seconds_delta defines threshold to identify replays in a series",
+    "seconds_delta": 2700,
+
+    "_replay_detail_mark_expiration": "number of hours that replay detail mark expires",
+    "replay_detail_mark_expiration": 0,
+    "replay_detail_reserved_cores_for_system" : 7,
+
+    "_section_replay_settings": "replay folders go in here",
+    "replay_repo_folder": "/Users/robert/data/replays/repo",
+    "replay_zip_folder": "/Users/robert/data/replays/ziparchive",
+    "replay_working_folder": "/Users/robert/data/replays/tmp",
+    "replay_failed_folder": "/Users/robert/data/replays/failed",
+    "replay_bypass_folder": "/Users/robert/data/replays/bypass",
+    "size_to_bypass": 500,
+
+    "python3_bin": "/Users/robert/devel/python/pythonenv/bin/python3",
+    "pythonpath": "/Users/robert/devel/python/sc2geeks",
+    "process_series_script": "/Users/robert/devel/python/sc2geeks/sc2lib/replay_post_processor.py",
+
+    "sc2reader_cache_dir": "/Users/robert/data/replays/cache",
+    "sc2reader_cache_max_entries": 200,
+    "replay_event": {
+        "ability": {
+            "exclude": ["CAbil"]
+        }
+    }
+}

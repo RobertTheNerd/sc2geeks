@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+    <bean id="imageProcessConfig" class="com.sc2geeks.ImageUtil.ImageProcessConfig">
+        <!-- files in this folder will be processed -->
+        <property name="inputFolder" value="X:\2011.12.25\input" />
+
+        <!-- files in input folder will be moved to this folder -->
+        <property name="originalFolder" value="X:\2011.12.25\original" />
+        <property name="resizeOptions">
+            <list>
+                <bean class="com.sc2geeks.ImageUtil.ResizeOption">
+                    <property name="size" value="46"/>
+                    <property name="folder" value="X:\2011.12.25\46" />
+                </bean>
+                <bean class="com.sc2geeks.ImageUtil.ResizeOption">
+                    <property name="size" value="60"/>
+                    <property name="folder" value="X:\2011.12.25\60" />
+                </bean>
+                <bean class="com.sc2geeks.ImageUtil.ResizeOption">
+                    <property name="size" value="124"/>
+                    <property name="folder" value="X:\2011.12.25\124" />
+                </bean>
+            </list>
+        </property>
+    </bean>
+</beans>

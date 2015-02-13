@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sc2geeks.replay.model.ActionEntity" table="rep_action" schema="" catalog="sc2geeks">
+        <id name="actionId" column="ActionId">
+            <generator class="identity"/>
+        </id>
+        <property name="frame" column="Frame"/>
+        <property name="gameId" column="GameId"/>
+        <property name="playerId" column="PlayerId"/>
+        <property name="playerIndex" column="PlayerIndex"/>
+        <property name="actionUnitId" column="ActionUnitId"/>
+    </class>
+</hibernate-mapping>

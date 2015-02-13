@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<dataConfig>
+	<!--
+	<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://192.168.0.68:3306/sc2rep"
+	            user="sc2nerd" password="nerd168"/>
+	-->
+	<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://d.sc2geeks.com:3306/sc2geeks"
+	            user="sc2geeks" password="geeks168"/>
+	<document>
+		<entity name="allreplays" query="
+	call UP_Solr_GetAllGames_V12('${dataimporter.request.clean}', '${dataimporter.last_index_time}');
+">
+			<field name="p_game_id" column="MainGameId"/>
+			<field name="p_replay_file" column="ReplayFile"/>
+
+			<field name="p_player1_id" column="Player1Id"/>
+			<field name="p_player1_name" column="Player1Name"/>
+			<field name="p_player1_race" column="Player1Race"/>
+			<field name="p_player1_apm" column="Player1Apm"/>
+			<field name="p_player1_is_random" column="Player1IsRandom"/>
+			<field name="p_player1_is_winner" column="Player1IsWinner"/>
+			<field name="p_player1_color" column="Player1Color"/>
+
+			<field name="p_player2_id" column="Player2Id"/>
+			<field name="p_player2_name" column="Player2Name"/>
+			<field name="p_player2_race" column="Player2Race"/>
+			<field name="p_player2_apm" column="Player2Apm"/>
+			<field name="p_player2_is_random" column="Player2IsRandom"/>
+			<field name="p_player2_is_winner" column="Player2IsWinner"/>
+			<field name="p_player2_color" column="Player2Color"/>
+
+			<field name="p_game_date" column="GameDate"/>
+			<field name="p_duration" column="Duration"/>
+			<field name="p_gateway" column="Gateway"/>
+			<field name="p_winner_name" column="Winner"/>
+			<field name="f_game_length" column="GameLength"/>
+
+			<field name="f_player" column="Player1Name"/>
+			<field name="f_player" column="Player2Name"/>
+			<field name="f_player_id" column="Player1Id"/>
+			<field name="f_player_id" column="Player2Id"/>
+			<field name="f_race" column="Player1Race"/>
+			<field name="f_race" column="Player2Race"/>
+			<field name="f_winner" column="Winner"/>
+			<field name="f_winning_race" column="WinningRace"/>
+			<field name="f_game_version" column="Version"/>
+			<field name="f_event" column="Event"/>
+			<field name="f_player_person_game_id" column="Player1GameId" />
+			<field name="f_player_person_game_id" column="Player2GameId" />
+			<field name="f_player_person_id" column="Player1PersonId" />
+			<field name="f_player_person_id" column="Player2PersonId" />
+
+			<field name="pf_race_type" column="RaceType"/>
+
+			<field name="p_map_id" column="MapId"/>
+			<field name="pf_map_name" column="MapName"/>
+			<field name="p_map_image" column="MapImageName"/>
+
+			<field name="p_special_keywords" column="SpecialKeywords"/>
+
+			<!-- series -->
+			<field name="p_series_replay_id" column="SeriesReplayId"/>
+			<field name="p_series_count" column="SeriesCount"/>
+			<field name="p_series_number" column="SeriesNumber"/>
+			<field name="p_series_first_date" column="SeriesFirstDate"/>
+			<field name="p_series_last_date" column="SerieslastDate"/>
+		</entity>
+	</document>
+</dataConfig>

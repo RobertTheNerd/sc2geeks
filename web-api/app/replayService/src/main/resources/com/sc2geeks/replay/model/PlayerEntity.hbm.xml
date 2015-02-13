@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.sc2geeks.replay.model.PlayerEntity" table="rep_player" schema="" catalog="sc2geeks">
+		<id name="playerId" column="PlayerId">
+			<generator class="identity"/>
+		</id>
+		<property name="playerName" column="PlayerName"/>
+		<property name="bnetId" column="BnetId"/>
+		<property name="bnetSubId" column="BnetSubId"/>
+		<property name="profileUrl" column="ProfileUrl"/>
+		<property name="gateway" column="Gateway"/>
+		<property name="region" column="Region"/>
+		<property name="gwCode" column="gwCode"/>
+		<property name="progamerId" column="ProgamerId"/>
+		<property name="status" column="Status"/>
+	</class>
+</hibernate-mapping>

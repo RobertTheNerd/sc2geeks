@@ -1,0 +1,266 @@
+Build Armory	Structure	Terran	1
+Build Assimilator	Structure	Terran	2
+Build Auto Turret (Raven)	Structure	Terran	3
+Build Baneling Nest	Structure	Zerg	4
+Build Barracks	Structure	Terran	5
+Build Bunker	Structure	Terran	6
+Build Command Center	Structure	Terran	7
+Build Creep Tumor (Creep Tumor)	Structure	Zerg	8
+Build Cybernetics Core	Structure	Protoss	9
+Build Dark Shrine	Structure	Protoss	10
+Build Engineering Bay	Structure	Terran	11
+Build Evolution Chamber	Structure	Zerg	12
+Build Extractor	Structure	Zerg	13
+Build Factory	Structure	Terran	14
+Build Fleet Beacon	Structure	Protoss	15
+Build Forge	Structure	Protoss	16
+Build Fusion Core	Structure	Protoss	17
+Build Gateway	Structure	Protoss	18
+Build Ghost Academy	Structure	Terran	19
+Build Hatchery	Structure	Zerg	20
+Build Hive	Structure	Zerg	21
+Build Hydralisk Den	Structure	Zerg	22
+Build Infestation Pit	Structure	Zerg	23
+Build Lair	Structure	Zerg	24
+Build Missile Turret	Structure	Terran	25
+Build Nexus	Structure	Protoss	26
+Build Nydus Network	Structure	Zerg	27
+Build Nydus Worm	Structure	Zerg	28
+Build Photon Cannon	Structure	Protoss	29
+Build Point Defense Drone (Raven)	Structure	Terran	30
+Build Pylon	Structure	Protoss	31
+Build Reactor (Barracks)	Structure	Terran	32
+Build Reactor (Factory)	Structure	Terran	33
+Build Reactor (Starport)	Structure	Terran	34
+Build Refinery	Structure	Terran	35
+Build Roach Warren	Structure	Zerg	36
+Build Robotics Bay	Structure	Protoss	37
+Build Robotics Facility	Structure	Protoss	38
+Build Sensor Tower	Structure	Terran	39
+Build Spawning Pool	Structure	Zerg	40
+Build Spine Crawler	Structure	Zerg	41
+Build Spire	Structure	Zerg	42
+Build Spore Crawler	Structure	Zerg	43
+Build Stargate	Structure	Protoss	44
+Build Starport	Structure	Terran	45
+Build Supply Depot	Structure	Terran	46
+Build Tech Lab (Barracks)	Structure	Terran	47
+Build Tech Lab (Factory)	Structure	Terran	48
+Build Tech Lab (Starport)	Structure	Terran	49
+Build Templar Archives	Structure	Protoss	50
+Build Twilight Council	Structure	Protoss	51
+Build Ultralisk Cavern	Structure	Zerg	52
+Mutate into a Gateway (Warp Gate)	Structure	Protoss	53
+Mutate into Greater Spire (Spire)	Structure	Zerg	54
+Seeker Missile (Raven)	Structure	Terran	55
+Spawn Creep Tumor (Queen)	Structure	Zerg	56
+Upgrade to Orbital Command (Command Center)	Structure	Terran	57
+Upgrade to Planetary Fortress (Command Center)	Structure	Terran	58
+Upgrade to Warp Gate (Gateway)	Structure	Protoss	59
+
+Calldown Extra Supplies (Orbital Command)	Unit	Terran	501
+Calldown MULE (Orbital Command)	Unit	Terran	502
+Infested Terran (Infestor)	Unit	Zerg	503
+Morph to Baneling (Zergling)	Unit	Zerg	504
+Morph to Brood Lord (Corruptor)	Unit	Zerg	505
+Morph to Overseer (Overlord)	Unit	Zerg	506
+Spawn Changeling (Overseer)	Unit	Zerg	507
+Train an Interceptor (Carrier)	Unit	Protoss	508
+Train Archon Hallucination (Sentry)	Unit	Protoss	509
+Train Banshee	Unit	Terran	510
+Train Battlecruiser	Unit	Terran	511
+Train Carrier	Unit	Protoss	512
+Train Colossus	Unit	Protoss	513
+Train Colossus Hallucination (Sentry)	Unit	Protoss	514
+Train Corruptor	Unit	Zerg	515
+Train Dark Templar	Unit	Protoss	516
+Train Dark Templar (Warp gate)	Unit	Protoss	517
+Train Drone	Unit	Zerg	518
+Train Ghost	Unit	Terran	519
+Train Hellion	Unit	Terran	520
+Train High Templar	Unit	Protoss	521
+Train High Templar (Warp gate)	Unit	Protoss	522
+Train High Templar Hallucination (Sentry)	Unit	Protoss	523
+Train Hydralisk	Unit	Zerg	524..........
+Train Immortal	Unit	Protoss	525
+Train Immortal Hallucination (Sentry)	Unit	Protoss	526
+Train Infestor	Unit	Zerg	527
+Train Marauder	Unit	Terran	528
+Train Marine	Unit	Terran	529
+Train Medivac	Unit	Terran	530
+Train Mothership	Unit	Protoss	531
+Train Mutalisk	Unit	Zerg	532
+Train Observer	Unit	Protoss	533
+Train Overlord	Unit	Zerg	534
+Train Phoenix	Unit	Protoss	535
+Train Phoenix Hallucination (Sentry)	Unit	Protoss	536
+Train Probe	Unit	Protoss	537
+Train Queen	Unit	Zerg	538
+Train Raven	Unit	Terran	539
+Train Reaper	Unit	Terran	540
+Train Roach	Unit	Zerg	541
+Train SCV	Unit	Terran	542
+Train Sentry	Unit	Protoss	543
+Train Sentry (Warp gate)	Unit	Protoss	544
+Train Siege Tank	Unit	Terran	545
+Train Stalker	Unit	Protoss	546
+Train Stalker (Warp gate)	Unit	Protoss	547
+Train Stalker Hallucination (Sentry)	Unit	Protoss	548
+Train Thor	Unit	Terran	549
+Train Ultralisk	Unit	Zerg	550
+Train Viking	Unit	Terran	551
+Train Void Ray	Unit	Protoss	552
+Train Void Ray Hallucination (Sentry)	Unit	Protoss	553
+Train Warp Prism	Unit	Protoss	554
+Train Warp Prism Hallucination (Sentry)	Unit	Protoss	555
+Train Zealot	Unit	Protoss	556
+Train Zealot (Warp gate)	Unit	Protoss	557
+Train Zealot Hallucination (Sentry)	Unit	Protoss	558
+Train Zergling	Unit	Zerg	559
+
+Charge (Zealot)	Cast	Protoss	1001
+Chrono Boost (Nexus)	Cast	Protoss	1002
+Cloak (Banshee)	Cast	Terran	1003
+Cloak (Ghost)	Cast	Terran	1004
+Contaminate (Overseer)	Cast	Zerg	1005
+Corruption (Corruptor)	Cast	Zerg	1006
+Decloak (Banshee)	Cast	Terran	1007
+Decloak (Ghost)	Cast	Terran	1008
+EMP Round (Ghost)	Cast	Terran	1009
+Explode (Baneling)	Cast	Zerg	1010
+Feedback (High Templar)	Cast	Protoss	1011
+Fighter Mode (Viking)	Cast	Terran	1012
+Force Field (Sentry)	Cast	Protoss	1013
+Fungal Growth (Infestor)	Cast	Zerg	1014
+Generate Creep (Overlord)	Cast	Zerg	1015
+Graviton Beam (Phoenix)	Cast	Protoss	1016
+Guardian Shield (Sentry)	Cast	Protoss	1017
+Mass Recall (Mothership)	Cast	Protoss	1018
+Neural Parasite (Infestor)	Cast	Zerg	1019
+Phasing Mode (Warp Prism)	Cast	Protoss	1020
+Psionic Storm (High Templar)	Cast	Protoss	1021
+Root (Spine Crawler)	Cast	Zerg	1022
+Root (Spore Crawler)	Cast	Zerg	1023
+Salvage (Bunker)	Cast	Terran	1024
+Sniper Round (Ghost)	Cast	Terran	1025
+Spawn Larva (Queen)	Cast	Zerg	1026
+Stimpack (Bunker)	Cast	Terran	1027
+Stimpack (Marauder)	Cast	Terran	1028
+Stimpack (Mixed Units)	Cast	Terran	1029
+Tac Nuclear Strike (Ghost)	Cast	Terran	1030
+Transfusion (Queen)	Cast	Zerg	1031
+Transport Mode (Warp Prism)	Cast	Protoss	1032
+Vortex (Mothership)	Cast	Protoss	1033
+Yamato Cannon (Battlecruiser)	Cast	Terran	1034
+Unload All (Bunker)	Cast	Terran	1035
+Unload All (Command Center)	Cast	Terran	1036
+Unload All (Command Center/Planetary Fortress)	Cast	Terran	1037
+Unload All (Medivac)	Cast	Terran	1038
+Unload All (Nydus Worm)	Cast	Zerg	1039
+Unload All (Overlord)	Cast	Zerg	1040
+Unload All (Warp Prism)	Cast	Protoss	1041
+Unload All At (Medivac)	Cast	Terran	1042
+Unload All At (Overlord)	Cast	Zerg	1043
+Unload All At (Warp Prism)	Cast	Protoss	1044
+Unload Unit (Bunker)	Cast	Terran	1045
+Unload Unit (Command Center)	Cast	Terran	1046
+Unload Unit (Medivac)	Cast	Terran	1047
+Unload Unit (Nydus Worm)	Cast	Zerg	1048
+Unload Unit (Overlord)	Cast	Zerg	1049
+Unload Unit (Warp Prism)	Cast	Protoss	1050
+Blink (Stalker)	Cast	Protoss	1051
+
+
+
+Research Protoss Anion Pulse-Crystals	Research	Protoss	1501
+Research Protoss Blink	Research	Protoss	1502
+Research Protoss Charge	Research	Protoss	1503
+Research Protoss Extended Thermal Lance	Research	Protoss	1504
+Research Protoss Flux Vanes	Research	Protoss	1505
+Research Protoss Gravitic Booster	Research	Protoss	1506
+Research Protoss Gravitic Drive	Research	Protoss	1507
+Research Protoss Graviton Catapult	Research	Protoss	1508
+Research Protoss Hallucination	Research	Protoss	1509
+Research Protoss Khaydarin Amulet	Research	Protoss	1510
+Research Protoss Psionic Storm	Research	Protoss	1511
+Research Protoss Warp Gate	Research	Protoss	1512
+Research Terran 250mm Strike Cannons	Research	Terran	1513
+Research Terran Behemoth Reactor	Research	Terran	1514
+Research Terran Caduceus Reactor	Research	Terran	1515
+Research Terran Cloaking Field	Research	Terran	1516
+Research Terran Combat Shield	Research	Terran	1517
+Research Terran Concussive Shells	Research	Terran	1518
+Research Terran Corvid Reactor	Research	Terran	1519
+Research Terran Durable Materials	Research	Terran	1520
+Research Terran Infernal Pre-Igniter	Research	Terran	1521
+Research Terran Moebius Reactor	Research	Terran	1522
+Research Terran Nitro Packs	Research	Terran	1523
+Research Terran Personal Cloaking	Research	Terran	1524
+Research Terran Seeker Missile	Research	Terran	1525
+Research Terran Siege Tech	Research	Terran	1526
+Research Terran Stimpack	Research	Terran	1527
+Research Terran Weapon Refit	Research	Terran	1528
+Research Zerg Adrenal Glands	Research	Zerg	1529
+Research Zerg Burrow	Research	Zerg	1530
+Research Zerg Centrifugal Hooks	Research	Zerg	1531
+Research Zerg Chitinous Plating	Research	Zerg	1532
+Research Zerg Glial Reconstitution	Research	Zerg	1533
+Research Zerg Grooved Snipes	Research	Zerg	1534
+Research Zerg Metabolic Boost	Research	Zerg	1535
+Research Zerg Neural Parasite	Research	Zerg	1536
+Research Zerg Pathogen Glands	Research	Zerg	1537
+Research Zerg Pneumatized Carapace	Research	Zerg	1538
+Research Zerg Tunneling Claws	Research	Zerg	1539
+Research Zerg Ventral Sacs	Research	Zerg	1540
+
+Upgrade Protoss Air Armor 1	Upgrade	Protoss	2001
+Upgrade Protoss Air Armor 2	Upgrade	Protoss	2002
+Upgrade Protoss Air Armor 3	Upgrade	Protoss	2003
+Upgrade Protoss Air Weapons 1	Upgrade	Protoss	2004
+Upgrade Protoss Air Weapons 2	Upgrade	Protoss	2005
+Upgrade Protoss Air Weapons 3	Upgrade	Protoss	2006
+Upgrade Protoss Ground Armor 1	Upgrade	Protoss	2007
+Upgrade Protoss Ground Armor 2	Upgrade	Protoss	2008
+Upgrade Protoss Ground Armor 3	Upgrade	Protoss	2009
+Upgrade Protoss Ground Weapons 1	Upgrade	Protoss	2010
+Upgrade Protoss Ground Weapons 2	Upgrade	Protoss	2011
+Upgrade Protoss Ground Weapons 3	Upgrade	Protoss	2012
+Upgrade Protoss Shield 1	Upgrade	Protoss	2013
+Upgrade Protoss Shield 2	Upgrade	Protoss	2014
+Upgrade Protoss Shield 3	Upgrade	Protoss	2015
+Upgrade Terran Building Armor	Upgrade	Terran	2016
+Upgrade Terran Hi-sec Auto Tracking	Upgrade	Terran	2017
+Upgrade Terran Infantry Armor 1	Upgrade	Terran	2018
+Upgrade Terran Infantry Armor 2	Upgrade	Terran	2019
+Upgrade Terran Infantry Armor 3	Upgrade	Terran	2020
+Upgrade Terran Infantry Weapons 1	Upgrade	Terran	2021
+Upgrade Terran Infantry Weapons 2	Upgrade	Terran	2022
+Upgrade Terran Infantry Weapons 3	Upgrade	Terran	2023
+Upgrade Terran Neosteel Frame	Upgrade	Terran	2024
+Upgrade Terran Ship Plating 1	Upgrade	Terran	2025
+Upgrade Terran Ship Plating 2	Upgrade	Terran	2026
+Upgrade Terran Ship Plating 3	Upgrade	Terran	2027
+Upgrade Terran Ship Weapons 1	Upgrade	Terran	2028
+Upgrade Terran Ship Weapons 2	Upgrade	Terran	2029
+Upgrade Terran Ship Weapons 3	Upgrade	Terran	2030
+Upgrade Terran Vehicle Plating 1	Upgrade	Terran	2031
+Upgrade Terran Vehicle Plating 2	Upgrade	Terran	2032
+Upgrade Terran Vehicle Plating 3	Upgrade	Terran	2033
+Upgrade Terran Vehicle Weapons 1	Upgrade	Terran	2034
+Upgrade Terran Vehicle Weapons 2	Upgrade	Terran	2035
+Upgrade Terran Vehicle Weapons 3	Upgrade	Terran	2036
+Upgrade Zerg Flyer Attacks 1	Upgrade	Zerg	2037
+Upgrade Zerg Flyer Attacks 2	Upgrade	Zerg	2038
+Upgrade Zerg Flyer Attacks 3	Upgrade	Zerg	2039
+Upgrade Zerg Flyer Carapace 1	Upgrade	Zerg	2040
+Upgrade Zerg Flyer Carapace 2	Upgrade	Zerg	2041
+Upgrade Zerg Flyer Carapace 3	Upgrade	Zerg	2042
+Upgrade Zerg Ground Carapace 1	Upgrade	Zerg	2043
+Upgrade Zerg Ground Carapace 2	Upgrade	Zerg	2044
+Upgrade Zerg Ground Carapace 3	Upgrade	Zerg	2045
+Upgrade Zerg Melee Attacks 1	Upgrade	Zerg	2046
+Upgrade Zerg Melee Attacks 2	Upgrade	Zerg	2047
+Upgrade Zerg Melee Attacks 3	Upgrade	Zerg	2048
+Upgrade Zerg Missile Attacks 1	Upgrade	Zerg	2049
+Upgrade Zerg Missile Attacks 2	Upgrade	Zerg	2050
+Upgrade Zerg Missile Attacks 3	Upgrade	Zerg	2051

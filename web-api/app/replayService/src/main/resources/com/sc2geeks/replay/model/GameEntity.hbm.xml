@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.sc2geeks.replay.model.GameEntity" table="rep_game" schema="" catalog="sc2geeks">
+		<id name="gameId" column="GameId">
+			<generator class="identity"/>
+		</id>
+		<property name="version" column="Version"/>
+		<property name="gameDate" column="GameDate"/>
+		<property name="replayFile" column="ReplayFile"/>
+		<property name="downloadedReplayFileName" column="DownloadedReplayFileName"/>
+		<property name="winnerTeam" column="WinnerTeam"/>
+		<property name="format" column="Format"/>
+		<property name="event" column="Event"/>
+		<property name="gameDescription" column="GameDescription"/>
+		<property name="duration" column="Duration"/>
+		<property name="downloads" column="Downloads"/>
+		<property name="externalId" column="ExternalId"/>
+		<property name="externalSource" column="ExternalSource"/>
+		<property name="externalRepFile" column="ExternalRepFile"/>
+		<property name="externalDescription" column="ExternalDescription"/>
+		<property name="gameUrl" column="GameUrl"/>
+		<property name="timeZone" column="TimeZone"/>
+		<property name="speed" column="Speed"/>
+		<property name="gameType" column="GameType"/>
+		<property name="status" column="Status"/>
+		<property name="gateway" column="Gateway"/>
+		<property name="crawlTimes" column="CrawlTimes"/>
+		<property name="downloadTimes" column="DownloadTimes"/>
+		<property name="parseTimes" column="ParseTimes"/>
+		<property name="lastEditUser" column="LastEditUser"/>
+		<property name="lastEditDate" column="LastEditDate"/>
+		<set name="gameTeams" table="rep_gameteam" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="ProgamerId" not-null="true"></column>
+			</key>
+			<one-to-many class="com.sc2geeks.replay.model.GameteamEntity"></one-to-many>
+		</set>
+		<many-to-one name="map" class="com.sc2geeks.replay.model.MapEntity" fetch="select">
+			<column name="MapId" not-null="true"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

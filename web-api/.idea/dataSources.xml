@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2220061087">
+    <data-source source="LOCAL" name="sc2geeks.replayDAO.cfg.xml" uuid="37c1884d-df3d-44fa-a3bd-b384d16434ae">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sc2geeks</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.19/mysql-connector-java-5.1.19.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

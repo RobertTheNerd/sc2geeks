@@ -1,0 +1,148 @@
+#player_detail {
+	border: 1px solid #333333;
+	margin: 20px auto 30px;
+	padding-top: 5px;
+	width: 780px;
+}
+
+#imageSection{
+	width:240px;
+	float:left;
+	margin:0 0 0 20px;
+}
+#mainImage {
+	width:240px;
+	height: 240px;
+}
+
+#summarySection {
+	float: left;
+	margin: 10px 0 0 20px;
+	width: 500px;
+}
+#player_detail .sectionTitle {
+	font-size: 1em;
+	font-weight: bold;
+	width:750px;
+	background: #26264B;
+	height: 50px;
+	position: relative;
+	margin-left: 15px;
+}
+
+.sectionTitle .titleText {
+	height:20px; margin-top:-10px;
+	position:absolute;top:50%;
+	float:left;
+	font-size: 1.3em;
+}
+
+#summarySection span {
+	font-size: 0.85em;
+	line-height: 1.1em;
+	margin-left:5px;
+	width:380px;
+	float:left;
+	margin-top:5px;
+}
+#summarySection span.title {
+	margin-left:5px;
+	clear:left;
+	width:100px;
+	float:left;
+}
+
+#bodyContainer #contentContainer {
+	float:left;
+	margin: 15px 0 0 20px;
+}
+
+.sectionTitleContainer {
+	clear:both;
+	border-bottom: 2px solid #333333;
+}
+
+.sectionTitleContainer h3 {
+	margin:0 0 0 5px;
+	font-size: 1.1em;
+}
+
+#bodyContainer div#contentContainer {
+	float: none;
+	margin: 15px auto -18px;
+}
+
+
+/***** tab styles -- begin *****/
+
+/* root element for tabs  */
+ul.tabs {
+	margin:0 !important;
+	padding:0;
+	height:30px;
+	border-bottom:none;
+}
+
+/* single tab */
+ul.tabs li {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+	float:left;
+	font-size:0.9em;
+	display:block;
+	padding:5px 30px;
+	text-decoration:none;
+	border:1px solid #666;
+	border-bottom:0px;
+	height:18px;
+	background-color:#232154;
+	color:#9A9A9A;
+	margin-right:2px;
+	position:relative;
+	top:1px;
+	outline:0;
+	-moz-border-radius:4px 4px 0 0;
+}
+
+ul.tabs a:hover {
+	background-color:#0C1B6F;
+	color:#9A9A9A;
+}
+
+/* selected tab */
+ul.tabs a.current {
+	background-color:#0B0760;
+	color:#9A9A9A;
+	cursor:default;
+}
+
+
+/* tab pane */
+.panes > div {
+	display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	padding:15px 0;
+}
+/***** tab styles -- end *****/
+
+ul.liqui_list {
+	margin-top:-10px !important;
+}
+
+.hasMore {
+	height:15px;
+	font-size: 0.9em;
+}
+
+.hasMore a {
+	float:right;
+	margin: 3px 13px;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="sc2geeks.replayDAO.cfg.xml" value="37c1884d-df3d-44fa-a3bd-b384d16434ae" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/replayUtility/src/main/resources/sc2geeks.replayDAO.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/replayUtility/target/classes/sc2geeks.replayDAO.cfg.xml" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset1" name="XML Application Context" removed="false">
+          <file>file://$MODULE_DIR$/replayUtility/target/classes/batchUpload.xml</file>
+          <file>file://$MODULE_DIR$/replayUtility/target/classes/config.xml</file>
+          <file>file://$MODULE_DIR$/replayUtility/src/test/resources/repcrawl.xml</file>
+          <file>file://$MODULE_DIR$/replayUtility/target/test-classes/repcrawl.xml</file>
+          <file>file://$MODULE_DIR$/replayUtility/src/main/resources/config.xml</file>
+          <file>file://$MODULE_DIR$/replayUtility/src/main/resources/batchUpload.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+

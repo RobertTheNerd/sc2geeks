@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<dataConfig>
+	<!--
+	<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://192.168.0.68:3306/sc2rep"
+	            user="sc2nerd" password="nerd168"/>
+	-->
+	<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://d.sc2geeks.com:3306/sc2geeks"
+	            user="sc2geeks" password="geeks168"/>
+	<document>
+		<entity name="allreplays" query="
+	call UP_Solr_GetAllPlayerPersons_V3();
+">
+			<field name="p_person_id" column="PersonId"/>
+			<field name="p_liquipedia_name" column="GameId"/>
+			<field name="p_en_fullname" column="ENFullName"/>
+			<field name="p_native_fullname" column="NativeFullName"/>
+			<field name="pf_team" column="Team"/>
+			<field name="p_alt_ids" column="AltIds"/>
+			<field name="p_image_name" column="LocalImage"/>
+			<field name="p_stream_url" column="Stream"/>
+			<field name="p_twitter_url" column="TwitterHandle"/>
+			<field name="p_wiki_url" column="WikiUrl"/>
+			<field name="p_fanpage" column="FanPage"/>
+			<field name="pf_country" column="Country"/>
+			<field name="p_birthday" column="BirthDay"/>
+			<field name="pf_race" column="Race"/>
+			<field name="p_replay_count" column="ReplayCount"/>
+		</entity>
+	</document>
+</dataConfig>

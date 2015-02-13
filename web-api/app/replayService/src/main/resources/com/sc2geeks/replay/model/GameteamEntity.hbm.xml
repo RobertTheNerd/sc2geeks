@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.sc2geeks.replay.model.GameteamEntity" table="rep_gameteam" schema="" catalog="sc2geeks">
+		<id name="gameTeamId" column="GameTeamId">
+			<generator class="identity"/>
+		</id>
+		<property name="gameId" column="GameId"/>
+		<property name="teamId" column="TeamId"/>
+		<property name="type" column="Type"/>
+		<property name="startRace" column="StartRace"/>
+		<property name="finalRace" column="FinalRace"/>
+		<property name="isWinner" column="IsWinner"/>
+		<property name="apm" column="Apm"/>
+		<property name="eApm" column="EApm"/>
+		<property name="colorName" column="ColorName"/>
+		<property name="colorR" column="ColorR"/>
+		<property name="colorG" column="ColorG"/>
+		<property name="colorB" column="ColorB"/>
+		<many-to-one name="player" class="com.sc2geeks.replay.model.PlayerEntity" fetch="select">
+			<column name="PlayerId" not-null="true"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

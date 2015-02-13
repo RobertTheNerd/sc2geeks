@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="Starcraft II replay sites">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="styles/bootstrap.css">
+     <link rel="stylesheet" href="styles/main.css">
+     <!-- bower:css -->
+     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+     <!-- endbower -->
+
+     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+   </head>
+   <body>
+      <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <!-- site logo here -->
+      <div class="container">
+      </div>
+      <!-- site main nav -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Replays</a></li>
+              <li><a href="#">Progamers</a></li>
+            </ul>
+            <div class="navbar-right">
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" placeholder="Life TvZ" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Search</button>
+              </form>
+            </div>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </nav>
+      <!-- breadcrumb + replays -->
+      <div class="container">
+        <!-- breadcrumb -->
+        <div class="row">
+          <ol class="breadcrumb">
+            <li><a href="#"><h1>Starcraft II replays</h1></a></li>
+            <li>Map: Lost Temple <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Player: MMA <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Search term: Life <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Map: Lost Temple <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Player: MMA <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Search term: Life <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Map: Lost Temple <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Player: MMA <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+            <li>Search term: Life <a href="#"><sup>(<span class="glyphicon glyphicon-remove"></span>)</sup></a></li>
+          </ol>
+        </div>
+        <!-- replays -->
+        <div class="row">
+          <!-- list section -->
+          <div class="col-md-8 col-md-push-4">
+            <!-- summary -->
+            <div id="replay-list-summary" class="row">
+              <div class="col-sm-12 col-md-4">Showing 1-50 of 200 replays.</div>
+              <div class="col-sm-5 col-sm-push-1 col-md-4"><div class="checkbox-inline"><label><input type="checkbox">Show charts</label></div></div>
+              <div class="col-sm-6 col-md-4"><div class="checkbox-inline"><label><input type="checkbox">Reveal winners</label></div></div>
+            </div>
+            <div id="replay-list-stats"></div>
+            <div id="replay-list">
+              <!-- replay row -->
+              <div class="row">
+                <!-- player vs player on map -->
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5">
+                      <div class="left-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary zerg-40">
+                          <p class="player-name">Life</p>
+                          <p class="apm">APM: 170 <i class="fa fa-trophy"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-push-2 col-sm-5">
+                      <div class="right-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary terran-40">
+                          <p class="player-name">MMA</p>
+                          <p class="apm"><i class="fa fa-trophy"></i> APM: 370</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-pull-5 col-xs-12 map-container">
+                      <div class="map-info">
+                        <img src="./img/Catallena-46x46.jpg" >
+                        <div class="map-name">Lost Temple</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- summary + action -->
+                <div class="col-md-4">
+                  <div class="row summery-action">
+                    <div class="col-sm-7 col-md-12 col-xs-7">05/13/2014 &nbsp;3/5</div>
+                    <div class="col-sm-5 col-md-12 col-xs-5 length">Length: 12:35</div>
+                    <div class="col-sm-7 col-md-12 col-xs-12 length">Event: 2013 WCS American S1</div>
+                    <div class="col-sm-5 col-md-12 col-xs-12 action-buttons">
+                      <a class="btn btn-success btn-xs">Detail </a>
+                      <a class="btn btn-success btn-xs">Download </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="replay-detail.html"><span class="clickable-container"></span></a>
+              </div>
+              <div class="row">
+                <!-- player vs player on map -->
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5">
+                      <div class="left-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary zerg-40">
+                          <p class="player-name">Life</p>
+                          <p class="apm">APM: 170 <i class="fa fa-trophy"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-push-2 col-sm-5">
+                      <div class="right-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary terran-40">
+                          <p class="player-name">MMA</p>
+                          <p class="apm"><i class="fa fa-trophy"></i> APM: 370</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-pull-5 col-xs-12 map-container">
+                      <div class="map-info">
+                        <img src="./img/Catallena-46x46.jpg" >
+                        <div class="map-name">Lost Temple</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- summary + action -->
+                <div class="col-md-4">
+                  <div class="row summery-action">
+                    <div class="col-sm-7 col-md-12 col-xs-7">05/13/2014 &nbsp;3/5</div>
+                    <div class="col-sm-5 col-md-12 col-xs-5 length">Length: 12:35</div>
+                    <div class="col-sm-7 col-md-12 col-xs-12 length">Event: 2013 WCS American S1</div>
+                    <div class="col-sm-5 col-md-12 col-xs-12 action-buttons">
+                      <a class="btn btn-success btn-xs">Detail </a>
+                      <a class="btn btn-success btn-xs">Download </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- player vs player on map -->
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5">
+                      <div class="left-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary zerg-40">
+                          <p class="player-name">Life</p>
+                          <p class="apm">APM: 170 <i class="fa fa-trophy"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-push-2 col-sm-5">
+                      <div class="right-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary terran-40">
+                          <p class="player-name">MMA</p>
+                          <p class="apm"><i class="fa fa-trophy"></i> APM: 370</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-pull-5 col-xs-12 map-container">
+                      <div class="map-info">
+                        <img src="./img/Catallena-46x46.jpg" >
+                        <div class="map-name">Lost Temple</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- summary + action -->
+                <div class="col-md-4">
+                  <div class="row summery-action">
+                    <div class="col-sm-7 col-md-12 col-xs-7">05/13/2014 &nbsp;3/5</div>
+                    <div class="col-sm-5 col-md-12 col-xs-5 length">Length: 12:35</div>
+                    <div class="col-sm-7 col-md-12 col-xs-12 length">Event: 2013 WCS American S1</div>
+                    <div class="col-sm-5 col-md-12 col-xs-12 action-buttons">
+                      <a class="btn btn-success btn-xs">Detail </a>
+                      <a class="btn btn-success btn-xs">Download </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- player vs player on map -->
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5">
+                      <div class="left-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary zerg-40">
+                          <p class="player-name">Life</p>
+                          <p class="apm">APM: 170 <i class="fa fa-trophy"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-push-2 col-sm-5">
+                      <div class="right-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary terran-40">
+                          <p class="player-name">MMA</p>
+                          <p class="apm"><i class="fa fa-trophy"></i> APM: 370</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-pull-5 col-xs-12 map-container">
+                      <div class="map-info">
+                        <img src="./img/Catallena-46x46.jpg" >
+                        <div class="map-name">Lost Temple</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- summary + action -->
+                <div class="col-md-4">
+                  <div class="row summery-action">
+                    <div class="col-sm-7 col-md-12 col-xs-7">05/13/2014 &nbsp;3/5</div>
+                    <div class="col-sm-5 col-md-12 col-xs-5 length">Length: 12:35</div>
+                    <div class="col-sm-7 col-md-12 col-xs-12 length">Event: 2013 WCS American S1</div>
+                    <div class="col-sm-5 col-md-12 col-xs-12 action-buttons">
+                      <a class="btn btn-success btn-xs">Detail </a>
+                      <a class="btn btn-success btn-xs">Download </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- player vs player on map -->
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5">
+                      <div class="left-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary zerg-40">
+                          <p class="player-name">Life</p>
+                          <p class="apm">APM: 170 <i class="fa fa-trophy"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-push-2 col-sm-5">
+                      <div class="right-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary terran-40">
+                          <p class="player-name">MMA</p>
+                          <p class="apm"><i class="fa fa-trophy"></i> APM: 370</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-pull-5 col-xs-12 map-container">
+                      <div class="map-info">
+                        <img src="./img/Catallena-46x46.jpg" >
+                        <div class="map-name">Lost Temple</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- summary + action -->
+                <div class="col-md-4">
+                  <div class="row summery-action">
+                    <div class="col-sm-7 col-md-12 col-xs-7">05/13/2014 &nbsp;3/5</div>
+                    <div class="col-sm-5 col-md-12 col-xs-5 length">Length: 12:35</div>
+                    <div class="col-sm-7 col-md-12 col-xs-12 length">Event: 2013 WCS American S1</div>
+                    <div class="col-sm-5 col-md-12 col-xs-12 action-buttons">
+                      <a class="btn btn-success btn-xs">Detail </a>
+                      <a class="btn btn-success btn-xs">Download </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- player vs player on map -->
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5">
+                      <div class="left-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary zerg-40">
+                          <p class="player-name">Life</p>
+                          <p class="apm">APM: 170 <i class="fa fa-trophy"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-push-2 col-sm-5">
+                      <div class="right-player">
+                        <!-- player color -->
+                        <div class="player-color-bar" style="border-color: #5bc0de"></div>
+                        <div class="player-summary terran-40">
+                          <p class="player-name">MMA</p>
+                          <p class="apm"><i class="fa fa-trophy"></i> APM: 370</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-pull-5 col-xs-12 map-container">
+                      <div class="map-info">
+                        <img src="./img/Catallena-46x46.jpg" >
+                        <div class="map-name">Lost Temple</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- summary + action -->
+                <div class="col-md-4">
+                  <div class="row summery-action">
+                    <div class="col-sm-7 col-md-12 col-xs-7">05/13/2014 &nbsp;3/5</div>
+                    <div class="col-sm-5 col-md-12 col-xs-5 length">Length: 12:35</div>
+                    <div class="col-sm-7 col-md-12 col-xs-12 length">Event: 2013 WCS American S1</div>
+                    <div class="col-sm-5 col-md-12 col-xs-12 action-buttons">
+                      <a class="btn btn-success btn-xs">Detail </a>
+                      <a class="btn btn-success btn-xs">Download </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <nav>
+                <ul class="pagination">
+                  <li class="disabled"><span>&lt;&lt; First</span></li>
+                  <li class="disabled"><span>&lt; Prev</span></li>
+                  <li class="active"><span>1</span></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=2">2</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=3">3</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=4">4</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=5">5</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=6">6</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=7">7</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=8">8</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=9">9</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=2">Next &gt;</a></li>
+                  <li><a href="http://www.sc2geeks.com/replay/nav/index.html?Page=145">Last &gt;&gt;</a></li>
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+          <!-- refinement -->
+          <div class="col-md-4 col-md-pull-8">
+            <nav id="replay-filters">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3>Narrow Results</h3>
+                </div>
+                <div class="panel-body">
+                  <h3 class="navigation-header">Maps</h3>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Lost Temple (10)</a></li>
+                    <li class="list-group-item"><a href="#">Frost LE (14)</a></li>
+                    <li class="list-group-item"><a href="#">Daedalus Point (10)</a></li>
+                    <li class="list-group-item"><a href="#">Polar Night LE (8)</a></li>
+                    <li class="list-group-item"><a href="#">Alterzim Stronghold TE (5)</a></li>
+                    <li class="list-group-item"><a href="#">Heavy Rain LE (5)</a></li>
+                    <li class="list-group-item"><a href="#">More ...</a></li>
+                  </ul>
+                  <h3 class="navigation-header">Players</h3>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Life (10)</a></li>
+                    <li class="list-group-item"><a href="#">MMA (14)</a></li>
+                    <li class="list-group-item"><a href="#">MC (10)</a></li>
+                    <li class="list-group-item"><a href="#">Jeadong (8)</a></li>
+                    <li class="list-group-item"><a href="#">Flash (5)</a></li>
+                    <li class="list-group-item"><a href="#">Sniper (5)</a></li>
+                    <li class="list-group-item"><a href="#">More ...</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <footer>
+          <p>&copy;SC2Geeks.com
+            | <a href="#">Legal</a>
+            | Developer: <a href="#">@RobertTheNerd</a>
+            | <a href="https://github.com/RobertTheNerd/sc2geeks">Fork on GitHub</a>
+          </p>
+        </footer>
+      </div>
+      <!-- /container -->
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+      <!-- endbower -->
+   </body>
+</html>

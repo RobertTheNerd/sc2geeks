@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+		"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+		"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!--
+		base template for pages with UI
+	-->
+	<definition name="baseLayout" template="/views/baseLayout.jsp">
+		<put-attribute name="htmlHead" value="/views/HtmlHead.jsp"/>
+		<put-attribute name="pageHeader" value="/views/PageHeader.jsp"/>
+		<put-attribute name="pageFooter" value="/views/PageFooter.jsp"/>
+	</definition>
+
+	<!--
+	    404 page layouts
+	-->
+	<definition name="notFoundLayout" extends="baseLayout">
+		<put-attribute name="pageBodyMain" value="/views/404/bodyMain.jsp"/>
+	</definition>
+
+	<!--
+	    replay UI layouts
+	-->
+	<definition name="searchResultLayout" extends="baseLayout">
+		<put-attribute name="preRender" value="/views/replay/search/preRender.jsp"/>
+		<put-attribute name="pageBodyMain" value="/views/replay/search/bodyMain.jsp"/>
+		<put-attribute name="scriptAtPageEnd" value="/views/replay/search/pageEnd.jsp"/>
+	</definition>
+
+    <definition name="replayDetailLayout" extends="baseLayout">
+        <put-attribute name="preRender" value="/views/replay/detail/preRender.jsp"/>
+        <put-attribute name="pageBodyMain" value="/views/replay/detail/bodyMain.jsp"/>
+        <put-attribute name="scriptAtPageEnd" value="/views/replay/detail/pageEnd.jsp"/>
+    </definition>
+
+	<!--
+	    Liquid progamer layouts
+	-->
+    <definition name="ProgamerListLayout" extends="baseLayout">
+        <put-attribute name="preRender" value="/views/progamer/playerList/preRender.jsp"/>
+        <put-attribute name="pageBodyMain" value="/views/progamer/playerList/bodyMain.jsp"/>
+        <put-attribute name="scriptAtPageEnd" value="/views/progamer/playerList/pageEnd.jsp"/>
+    </definition>
+	<definition name="ProgamerDetailLayout" extends="baseLayout">
+		<put-attribute name="preRender" value="/views/progamer/playerDetail/preRender.jsp"/>
+		<put-attribute name="pageBodyMain" value="/views/progamer/playerDetail/detailBodyMain.jsp"/>
+		<put-attribute name="scriptAtPageEnd" value="/views/progamer/playerDetail/pageEnd.jsp"/>
+	</definition>
+	<definition name="ProgamerDetailNotFoundLayout" extends="baseLayout">
+		<put-attribute name="preRender" value="/views/progamer/playerDetail/preRender.jsp"/>
+		<put-attribute name="pageBodyMain" value="/views/progamer/playerDetail/errorBodyMain.jsp"/>
+		<put-attribute name="scriptAtPageEnd" value="/views/progamer/playerDetail/pageEnd.jsp"/>
+	</definition>
+
+
+	<!--
+		   <definition name="searchResult" extends="baseLayout">
+			   <put-attribute name="title" values="Welcome"/>
+			   <put-attribute name="body" values="/welcome.jsp"/>
+		   </definition>
+		   -->
+
+</tiles-definitions>

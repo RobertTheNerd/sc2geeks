@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sc2geeks.replay.model">
+
+    <class name="ProgamerImageLogEntity" table="progamerimagelog" schema="" catalog="sc2geeks">
+        <id name="logId">
+            <generator class="increment"/>
+        </id>
+        <property name="remoteImageUrl">
+            <column name="RemoteImageUrl" sql-type="varchar" length="268"/>
+        </property>
+        <property name="crawledDate">
+            <column name="CrawledDate" sql-type="datetime" length="19"/>
+        </property>
+        <many-to-one name="progamer" class="com.sc2geeks.replay.model.ProgamerEntity" fetch="select">
+	        <column name="ProgamerId" not-null="true"></column>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

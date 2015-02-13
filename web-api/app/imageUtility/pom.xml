@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.sc2geeks.app</groupId>
+		<artifactId>container</artifactId>
+		<version>0.1</version>
+	</parent>
+
+	<groupId>com.sc2geeks.app</groupId>
+	<artifactId>imageUtility</artifactId>
+	<version>0.1</version>
+	<packaging>jar</packaging>
+	<name>SC2Geeks - Image utility</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sc2geeks</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.9</version>
+		</dependency>
+	</dependencies>
+</project>

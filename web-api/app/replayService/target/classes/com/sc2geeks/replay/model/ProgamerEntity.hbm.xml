@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.sc2geeks.replay.model.ProgamerEntity" table="progamer" schema="" catalog="sc2geeks">
+		<id name="progamerId" column="ProgamerId">
+			<generator class="identity"/>
+		</id>
+
+		<property name="gameName" column="GameName"/>
+		<property name="enFullName" column="ENFullName"/>
+		<property name="nativeFullName" column="NativeFullName"/>
+		<property name="team" column="Team"/>
+		<property name="altIds" column="AltIds"/>
+		<property name="race" column="Race"/>
+		<property name="wikiUrl" column="WikiUrl"/>
+		<property name="wikiImageUrl" column="WikiImageUrl"/>
+		<property name="stream" column="Stream"/>
+		<property name="twitterHandle" column="TwitterHandle"/>
+		<property name="localImage" column="LocalImage"/>
+		<property name="country" column="Country"/>
+		<property name="fanPage" column="FanPage"/>
+		<property name="birthDay" column="BirthDay"/>
+		<property name="lastEditDate" column="lasteditdate"/>
+	</class>
+</hibernate-mapping>

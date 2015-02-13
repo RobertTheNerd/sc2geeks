@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+    <bean name="replaySolrConfig" class="api.sc2geeks.service.imp.SolrConfig">
+        <property name="solrServerUrl" value="http://localhost:6806/solr/replays/" />
+        <property name="solrFields">
+            <list>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="PlayerRace" />
+                    <property name="fieldName" value="f_race" />
+                    <property name="urlParameterName" value="playerRace" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="WinningRace" />
+                    <property name="fieldName" value="f_winning_race" />
+                    <property name="urlParameterName" value="winningRace" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="MatchUpType" />
+                    <property name="fieldName" value="pf_race_type" />
+                    <property name="urlParameterName" value="matchup" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="PlayerName" />
+                    <property name="fieldName" value="f_player" />
+                    <property name="urlParameterName" value="player" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="WinnerName" />
+                    <property name="fieldName" value="f_winner" />
+                    <property name="urlParameterName" value="winner" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="MapName" />
+                    <property name="fieldName" value="pf_map_name" />
+                    <property name="urlParameterName" value="map" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="GameVersion" />
+                    <property name="fieldName" value="f_game_version" />
+                    <property name="urlParameterName" value="version" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="Event" />
+                    <property name="fieldName" value="f_event" />
+                    <property name="urlParameterName" value="event" />
+                </bean>
+	            <bean class="api.sc2geeks.service.imp.SolrField">
+		            <property name="refinementField" value="ProgamerId" />
+		            <property name="fieldName" value="f_player_person_id" />
+		            <property name="urlParameterName" value="personId" />
+	            </bean>
+	            <bean class="api.sc2geeks.service.imp.SolrField">
+		            <property name="refinementField" value="ProgamerName" />
+		            <property name="fieldName" value="f_player_person_game_id" />
+		            <property name="urlParameterName" value="playerPersonName" />
+	            </bean>
+            </list>
+        </property>
+	    <property name="extraSortInfo">
+		    <list>
+			    <bean class="api.sc2geeks.service.imp.SolrSortInfo">
+				    <property name="sortField" value="p_series_last_date"></property>
+				    <property name="sortOrder" value="desc"></property>
+			    </bean>
+			    <bean class="api.sc2geeks.service.imp.SolrSortInfo">
+				    <property name="sortField" value="p_series_number"></property>
+				    <property name="sortOrder" value="desc"></property>
+			    </bean>
+		    </list>
+	    </property>
+    </bean>
+
+	<bean name="playerPersonSolrConfig" class="api.sc2geeks.service.imp.SolrConfig">
+        <property name="solrServerUrl" value="http://localhost:6806/solr/players/" />
+        <property name="solrFields">
+            <list>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="PlayerRace" />
+                    <property name="fieldName" value="pf_race" />
+                    <property name="urlParameterName" value="playerRace" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="Team" />
+                    <property name="fieldName" value="pf_team" />
+                    <property name="urlParameterName" value="team" />
+                </bean>
+                <bean class="api.sc2geeks.service.imp.SolrField">
+                    <property name="refinementField" value="Country" />
+                    <property name="fieldName" value="pf_country" />
+                    <property name="urlParameterName" value="country" />
+                </bean>
+            </list>
+        </property>
+		<property name="extraSortInfo">
+			<list>
+				<bean class="api.sc2geeks.service.imp.SolrSortInfo">
+					<property name="sortField" value="p_liquipedia_name"></property>
+					<property name="sortOrder" value="asc"></property>
+				</bean>
+			</list>
+		</property>
+    </bean>
+
+	<bean id="mongoStatsConfig" class="api.sc2geeks.service.imp.MongoConfig">
+		<property name="mongoHost" value="localhost" />
+		<property name="mongoPort" value="27017"/>
+		<property name="mongoDBName" value="stats"/>
+	</bean>
+	<bean id="mongoReplayConfig" class="api.sc2geeks.service.imp.MongoConfig">
+		<property name="mongoHost" value="localhost" />
+		<property name="mongoPort" value="27017"/>
+		<property name="mongoDBName" value="sc2"/>
+	</bean>
+
+</beans>

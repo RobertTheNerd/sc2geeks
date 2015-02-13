@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<bean id="websiteConfig" class="com.sc2geeks.front.WebsiteConfig">
+		<property name="websiteName" value="SC2Geeks.com" />
+		<property name="websiteRoot" value="http://test.sc2geeks.com:7080/"/>
+		<property name="cssRoot" value="http://test.sc2geeks.com:7080/theme/geek2011/css/"/>
+		<property name="imageRoot" value="http://test.sc2geeks.com:7080/theme/geek2011/img/"/>
+		<property name="jsRoot" value="http://test.sc2geeks.com:7080/js/"/>
+		<property name="mapImageRoot" value="http://d.sc2geeks.com/wp-content/uploads/"/>
+		<property name="map46ImageRoot" value="http://d.sc2geeks.com/wp-content/uploads/"/>
+		<property name="map124ImageRoot" value="http://d.sc2geeks.com/wp-content/uploads/"/>
+        
+        <!-- progamer image -->
+        <property name="playerImageRoot" value="http://d.sc2geeks.com/wp-content/uploads/" />
+		<property name="replayFileRoot" value="http://sc2nerd.dyndns.org/replay/" />
+		<property name="replayFilePrefix" value="/srv/sc2geeks/replays/repo/" />
+
+		<property name="defaultExtension" value="html" />
+		<property name="pageUrlAliasList" ref="pageUrlAlias"/>
+		<property name="renderStatCounter" value="false" />
+		<property name="renderGoogleAnalytics" value="true" />
+		<property name="renderFootPrintTag" value="false" />
+		<property name="renderFeedback" value="true" />
+		<property name="leftNavTolerateCount" value="3" />
+		<property name="maxReplayCountInRelatedTab" value="6" />
+		<property name="siteMapFile" value="/sitemap.xml" />
+		<property name="refinementSettings">
+			<list>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="Event" />
+					<property name="urlPrefix" value="Event" />
+					<property name="displayName" value="Event" />
+					<property name="legacyParameter" value="" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="MatchUpType" />
+					<property name="urlPrefix" value="MatchUp" />
+					<property name="displayName" value="MatchUp" />
+					<property name="legacyParameter" value="mt" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="MapName" />
+					<property name="urlPrefix" value="Map" />
+					<property name="displayName" value="Map" />
+					<property name="legacyParameter" value="mp" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="WinningRace" />
+					<property name="urlPrefix" value="WinningRace" />
+					<property name="displayName" value="Winning Race" />
+					<property name="legacyParameter" value="wr" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="PlayerName" />
+					<property name="urlPrefix" value="Player" />
+					<property name="displayName" value="Player" />
+					<property name="legacyParameter" value="pn" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="ProgamerName" />
+					<property name="urlPrefix" value="Progamer" />
+					<property name="displayName" value="Player" />
+					<property name="legacyParameter" value="" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="WinnerName" />
+					<property name="urlPrefix" value="Winner" />
+					<property name="displayName" value="Winner" />
+					<property name="legacyParameter" value="wn" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="PlayerRace" />
+					<property name="urlPrefix" value="PlayerRace" />
+					<property name="displayName" value="Player Race" />
+					<property name="legacyParameter" value="pr" />
+				</bean>
+				<bean class="com.sc2geeks.front.RefinementSetting">
+					<property name="refinementField" value="GameVersion" />
+					<property name="urlPrefix" value="Version" />
+					<property name="displayName" value="Version" />
+					<property name="legacyParameter" value="v" />
+				</bean>
+			</list>
+		</property>
+		<property name="replayLeftNavRefinementProvider" ref="replayLeftNavRefinementProvider" />
+        <property name="replayShowAllRefinementProvider" ref="replayShowAllRefinementProvider" />
+        <property name="playerLeftNavRefinementProvider" ref="playerLeftNavRefinementProvider" />
+        <property name="defaultSEOInfo" ref="defaultSEO"></property>
+		<property name="statsContainerSettings" ref="statsContainerSettings"/>
+	</bean>
+	<util:list id="pageUrlAlias" value-type="com.sc2geeks.front.ui.PageUrlSetting">
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="Homepage"/>
+			<property name="url" value="/replay/index.html"/>
+		</bean>
+        <bean class="com.sc2geeks.front.ui.PageUrlSetting">
+            <property name="alias" value="ReplayHome"/>
+            <property name="url" value="/replay/"/>
+        </bean>
+        <bean class="com.sc2geeks.front.ui.PageUrlSetting">
+            <property name="alias" value="ReplaySearch"/>
+            <property name="url" value="/replay/nav/"/>
+        </bean>
+        <bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="ReplayDetail"/>
+			<property name="url" value="/replay/"/>
+		</bean>
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="ReplayDownload"/>
+			<property name="url" value="/replay/download/"/>
+		</bean>
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="ProgamerHome"/>
+			<property name="url" value="/progamer/"/>
+		</bean>
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="ProgamerDetail"/>
+			<property name="url" value="/progamer/"/>
+		</bean>
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="StatsViewReplay"/>
+			<property name="url" value="/stats/view-replay.gift"/>
+			<property name="skipExtension" value="true"/>
+		</bean>
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="StatsDownloadReplay"/>
+			<property name="url" value="/stats/download-replay.gift"/>
+			<property name="skipExtension" value="true"/>
+		</bean>
+		<bean class="com.sc2geeks.front.ui.PageUrlSetting">
+			<property name="alias" value="StatsViewProgamer"/>
+			<property name="url" value="/stats/view-progamer.gift"/>
+			<property name="skipExtension" value="true"/>
+		</bean>
+	</util:list>
+	<bean name="replayLeftNavRefinementProvider" class="com.sc2geeks.front.RefinementInfoProvider">
+		<property name="refinementInfoList">
+			<list>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="PlayerRace"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Asc"></property>
+					<property name="maxCount" value="3"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="WinningRace"></property>
+					<property name="sortMethod" value="Count"></property>
+					<property name="sortOrder" value="Desc"></property>
+					<property name="maxCount" value="3"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="MatchUpType"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Asc"></property>
+					<property name="maxCount" value="0"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="ProgamerName"></property>
+					<property name="sortMethod" value="Count"></property>
+					<property name="sortOrder" value="Desc"></property>
+					<property name="maxCount" value="4"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="WinnerName"></property>
+					<property name="sortMethod" value="Count"></property>
+					<property name="sortOrder" value="Desc"></property>
+					<property name="maxCount" value="4"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="MapName"></property>
+					<property name="sortMethod" value="Count"></property>
+					<property name="sortOrder" value="Desc"></property>
+					<property name="maxCount" value="5"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="Event"></property>
+					<property name="sortMethod" value="Count"></property>
+					<property name="sortOrder" value="Desc"></property>
+					<property name="maxCount" value="5"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="GameVersion"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Desc"></property>
+					<property name="maxCount" value="1"></property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	<bean name="replayShowAllRefinementProvider" class="com.sc2geeks.front.RefinementInfoProvider">
+		<property name="refinementInfoList">
+			<list>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="ProgamerName"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Asc"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="WinnerName"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Asc"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="MapName"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Asc"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="Event"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Asc"></property>
+				</bean>
+				<bean class="api.sc2geeks.entity.RefinementInfo">
+					<property name="refinementField" value="GameVersion"></property>
+					<property name="sortMethod" value="Name"></property>
+					<property name="sortOrder" value="Desc"></property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+    <bean name="playerLeftNavRefinementProvider" class="com.sc2geeks.front.RefinementInfoProvider">
+        <property name="refinementInfoList">
+            <list>
+                <bean class="api.sc2geeks.entity.RefinementInfo">
+                    <property name="refinementField" value="PlayerRace"></property>
+                    <property name="sortMethod" value="Name"></property>
+                    <property name="sortOrder" value="Asc"></property>
+                </bean>
+                <bean class="api.sc2geeks.entity.RefinementInfo">
+                    <property name="refinementField" value="Team"></property>
+                    <property name="sortMethod" value="Name"></property>
+                    <property name="sortOrder" value="Asc"></property>
+                </bean>
+                <bean class="api.sc2geeks.entity.RefinementInfo">
+                    <property name="refinementField" value="Country"></property>
+                    <property name="sortMethod" value="Name"></property>
+                    <property name="sortOrder" value="Asc"></property>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <bean name="replayServiceConfig" class="api.sc2geeks.client.ServiceConfig">
+		<property name="serviceUrl" value="http://localhost:7779/replay/"></property>
+		<property name="refinementFieldSetting">
+			<map>
+				<entry key="MapName" value="map" />
+				<entry key="Event" value="event" />
+				<entry key="PlayerName" value="player" />
+				<entry key="WinnerName" value="winner" />
+				<entry key="PlayerRace" value="playerRace" />
+				<entry key="WinningRace" value="winningRace" />
+				<entry key="GameVersion" value="version" />
+				<entry key="MatchUpType" value="matchup" />
+				<entry key="ProgamerName" value="playerPersonName" />
+				<entry key="ProgamerId" value="personId" />
+			</map>
+		</property>
+	</bean>
+	<bean name="playerServiceConfig" class="api.sc2geeks.client.ServiceConfig">
+		<property name="serviceUrl" value="http://localhost:7779/progamer/"></property>
+		<property name="refinementFieldSetting">
+			<map>
+				<entry key="PlayerRace" value="playerRace" />
+				<entry key="Team" value="team" />
+				<entry key="Country" value="country" />
+			</map>
+		</property>
+	</bean>
+	<bean name="defaultSEO" class="com.sc2geeks.front.ui.PageSEOInfo">
+		<property name="pageTitle" value="SC2Geeks.com: the best place to find and download Starcraft II replays." />
+		<property name="pageKeyword" value="SC2Geeks.com: best place to find and download Starcraft 2 replays, Starcraft II, replay, search, download, Blizzard, Terran, Protoss, Zerg." />
+		<property name="pageDescription" value="SC2Geeks.com: best place to find and download Starcraft 2 replays. It takes a geek to be pro." />
+	</bean>
+	<util:list id="statsContainerSettings" value-type="com.sc2geeks.front.StatsContainerSetting">
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="Event" />
+			<property name="divId" value="event-stats-container" />
+			<property name="title" value="Tournaments"/>
+			<property name="chartType" value="bar"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="PlayerRace" />
+			<property name="divId" value="participating-race-stats-container" />
+			<property name="title" value="Participating Races"/>
+			<property name="chartType" value="pie"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="WinningRace" />
+			<property name="divId" value="winning-race-stats-container" />
+			<property name="title" value="Winning Races"/>
+			<property name="chartType" value="pie"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="MatchUpType" />
+			<property name="divId" value="matchup-stats-container" />
+			<property name="title" value="Match-ups"/>
+			<property name="chartType" value="pie"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="MapName" />
+			<property name="divId" value="map-stats-container" />
+			<property name="title" value="Maps"/>
+			<property name="chartType" value="bar"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="ProgamerName" />
+			<property name="divId" value="progamer-stats-container" />
+			<property name="title" value="Pro-gamers"/>
+			<property name="chartType" value="bar"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="WinnerName" />
+			<property name="divId" value="winner-stats-container" />
+			<property name="title" value="Winners"/>
+			<property name="chartType" value="bar"/>
+		</bean>
+		<bean class="com.sc2geeks.front.StatsContainerSetting">
+			<property name="refinementField" value="GameVersion" />
+			<property name="divId" value="game-version-stats-container" />
+			<property name="title" value="Versions"/>
+			<property name="chartType" value="bar"/>
+		</bean>
+	</util:list>
+</beans>

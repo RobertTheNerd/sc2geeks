@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/SolrUpdater/SolrUpdater.iml" filepath="$PROJECT_DIR$/app/SolrUpdater/SolrUpdater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/imageUtility/imageUtility.iml" filepath="$PROJECT_DIR$/app/imageUtility/imageUtility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/playerCrawler/playerCrawler.iml" filepath="$PROJECT_DIR$/app/playerCrawler/playerCrawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/replayService/replayService.iml" filepath="$PROJECT_DIR$/app/replayService/replayService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/replayUtility/replayUtility.iml" filepath="$PROJECT_DIR$/app/replayUtility/replayUtility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sc2geeks.iml" filepath="$PROJECT_DIR$/sc2geeks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/website/service/service.iml" filepath="$PROJECT_DIR$/website/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/website/service.client/service.client.iml" filepath="$PROJECT_DIR$/website/service.client/service.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/website/service.imp/service.imp.iml" filepath="$PROJECT_DIR$/website/service.imp/service.imp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/v2.iml" filepath="$PROJECT_DIR$/v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/website/website.iml" filepath="$PROJECT_DIR$/website/website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/website/www.website/www.website.iml" filepath="$PROJECT_DIR$/website/www.website/www.website.iml" />
+    </modules>
+  </component>
+</project>
