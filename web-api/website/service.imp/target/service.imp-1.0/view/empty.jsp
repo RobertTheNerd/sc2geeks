@@ -1,1 +1,0 @@
-<%@ page contentType="application/json" pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" session="false" %>
