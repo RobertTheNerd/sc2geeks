@@ -17,7 +17,9 @@
 	SearchResult<Replay> searchResult = getValue("searchResult");
 
 	SearchUrlHelper searchUrlHelper = getValue("searchUrlHelper");
-	int currentPage, totalPage;
-	currentPage = searchResult.getCurrentPage();
-	totalPage = (int)Math.ceil((double)searchResult.getTotalMatches() / searchInput.getPageSize());
+	int currentPage = 0, totalPage = 0;
+	if (searchResult != null) {
+		currentPage = searchResult.getCurrentPage();
+		totalPage = (int)Math.ceil((double)searchResult.getTotalMatches() / searchInput.getPageSize());
+	}
 %>

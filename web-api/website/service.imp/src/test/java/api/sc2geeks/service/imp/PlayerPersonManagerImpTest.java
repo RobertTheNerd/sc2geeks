@@ -1,13 +1,5 @@
 package api.sc2geeks.service.imp;
 
-import api.sc2geeks.entity.*;
-import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.*;
-
 /**
  * Created with IntelliJ IDEA.
  * User: robert
@@ -16,7 +8,7 @@ import static org.junit.Assert.*;
  * To change this template use File | Settings | File Templates.
  */
 public class PlayerPersonManagerImpTest
-{
+{/*
 	@Test
 	public void testGetPlayerPersons() throws Exception
 	{
@@ -39,5 +31,5 @@ public class PlayerPersonManagerImpTest
 		si.setRefinementFields(refinementInfoList);
 		sr = manager.getPlayerPersons(si, false);
 		assertTrue(sr.getNavigationNodes() != null && sr.getNavigationNodes().size() > 0);
-	}
+	}*/
 }

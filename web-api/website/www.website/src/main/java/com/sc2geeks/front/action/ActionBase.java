@@ -51,6 +51,10 @@ public abstract class ActionBase extends ActionSupport implements ServletRequest
 			String result = doExecute();
 
 			postExecute();
+
+			if ("exception".compareToIgnoreCase(result) == 0) {
+				throw new Exception("On purpose");
+			}
 			return result;
 		} catch (Exception e)
 		{

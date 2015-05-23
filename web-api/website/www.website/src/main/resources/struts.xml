@@ -65,6 +65,7 @@
 	</package>
     <package name="root" namespace="/" extends="sc2geeks-default">
 	    <action name="index" class="com.sc2geeks.front.action.WebsiteRootAction"></action>
+	    <action name="exception" class="com.sc2geeks.front.action.ExceptionAction"></action>
 	    <action name="" class="com.sc2geeks.front.action.WebsiteRootAction"></action>
 		<action name="generateSitemap" class="com.sc2geeks.front.action.SiteMapAction">
 			<result name="success">/views/genSitemap.jsp</result>
