@@ -25,9 +25,11 @@
 				<label for="toggleStats">Show stats & charts</label>
 			</div>
 		</div>
-		<div id="replay-stats">
-			<hs:Stats navigationNodes="<%= searchResult.getNavigationNodes() %>" />
-		</div>
+		<c:if test="${searchResult.totalMatches > 0}">
+			<div id="replay-stats">
+				<hs:Stats navigationNodes="<%= searchResult.getNavigationNodes() %>" />
+			</div>
+		</c:if>
 		<c:if test="${searchResult != null}">
 			<h:ReplayResultList replays="${searchResult.entityList}"/>
 		</c:if>
