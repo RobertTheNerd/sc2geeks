@@ -8,7 +8,7 @@
 
 <%@ include file="base.tag" %>
 <%
-	if (searchResult.hasNavigation())
+	if (searchResult != null && searchResult.hasNavigation())
 	{
 %>
 <div id="leftnav_wrapper">
